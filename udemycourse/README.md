@@ -395,12 +395,12 @@ https://www.udemy.com/course/kotlin-for-java-developers/
     * open
     * abstract (implicitly open)
     Example:
-        /kotlin-training/task-03/src/main/kotlin/co/bk/kotlintraining/task03/inheritance/Printer.kt
+        ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/src/main/kotlin/co/bk/kotlinskills/udemycourse/Inheritance.kt
 2.  Subclasses must call parent constructor. Either:
     1.  Add this to subclass:
             constructor(): super()
     2.  OR add () to all parts of the parent and subclass. See example 1 in 
-            /kotlin-training/task-03/src/main/kotlin/co/bk/kotlintraining/task03/inheritance/Printer.kt
+            ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/src/main/kotlin/co/bk/kotlinskills/udemycourse/Inheritance.kt
 3.  Override methods in parent classes by:
     1.  Add "open" or "abstracct" to function definition in parent
     2.  And "override" to function in child
@@ -408,7 +408,7 @@ https://www.udemy.com/course/kotlin-for-java-developers/
 4.  Primary and secondary constructors. Generally speaking:
     * rule is just use the secondary constructor without a primary constructor OR rely solely on the primary constructor otherwise the compiler complains about different stuff.
     * examples 3 and 4 demo that in
-        /kotlin-training/task-03/src/main/kotlin/co/bk/kotlintraining/task03/inheritance/Printer.kt
+        ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/src/main/kotlin/co/bk/kotlinskills/udemycourse/Inheritance.kt
     All constructors must use the primary constructor:
     * you can't call a super secondary constructor if you have a primary constructor (because every constructor must delegate to primary constructor)    
     * see Printer.kt example 3 for no primary constructor and subclass calling secondary in parent class e.g Something
@@ -418,7 +418,7 @@ https://www.udemy.com/course/kotlin-for-java-developers/
         }
         
 6.  Interfaces example at:
-        kotlin-training/task-03/src/main/kotlin/co/bk/kotlintraining/task03/InterfaceExample.kt
+        ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/src/main/kotlin/co/bk/kotlinskills/udemycourse/InterfaceExample.kt
     Interfaces can have properties and these don't need to be abstract and you can provide accessors for them:
         val number: Int
     However in interfaces "concrete" property init like this is not allowed:
@@ -849,7 +849,6 @@ https://www.udemy.com/course/kotlin-for-java-developers/
             
         
         
-
 ```
 
 ### Kotlin Generics
@@ -858,7 +857,7 @@ https://www.udemy.com/course/kotlin-for-java-developers/
     * inline function parameters in Kotlin can be "reified"
     * reification is a Kotlin feature that prevents the type from being erased at runtime
     * to use reification you must 1) inline the parameter 2) and reify the type parameter
-    * SEE /home/brian/Documents/CODE/GITHUB/kotlin-training/docs/reification-can-solve-error-on-T.jpg
+    * SEE ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/docs/reification-can-solve-error-on-T.jpg
 2.  Reification in practice means changing:
         fun <T> getElementsOfType(paramList: List<Any>): List<T> {...}
     to:
@@ -875,9 +874,9 @@ https://www.udemy.com/course/kotlin-for-java-developers/
     * a MutableList is NOT covariant (and so sub-typing is not preserved)
     * a non-mutable list is covaraint (and sub-typing is preserved) e.g covariance ONLY works for immutable collections
     Example not in java:
-    * SEE /home/brian/Documents/CODE/GITHUB/kotlin-training/docs/covariance-not-supported-in-java.jpg
-    * SEE /home/brian/Documents/CODE/GITHUB/kotlin-training/docs/covariance-supported-in-kotlin.jpg
-    * SEE /home/brian/Documents/CODE/GITHUB/kotlin-training/docs/covariance-supported-in-kotlin-02.jpg
+    * SEE ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/docs/covariance-not-supported-in-java.jpg
+    * SEE ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/docs/covariance-supported-in-kotlin.jpg
+    * SEE ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/docs/covariance-supported-in-kotlin-02.jpg
 
 5.  Covariance can be added. For example consider:
         // Known as "invariant" as it ONLY wants a class of Flower and not Rose. The implication of this invariance is that if you try
@@ -908,7 +907,7 @@ https://www.udemy.com/course/kotlin-for-java-developers/
     * enable contravariance with the IN keyword (we say we will accept any type that has X IN its inheritance tree e.g ROSE)
     Usage example:
     * enabling contravariance would allow us to make some methods more generic e.g flowerTender method instead of custom methods per object type roseTender, daffodilTender
-    * SEE /home/brian/Documents/CODE/GITHUB/kotlin-training/task-03/src/main/kotlin/co/bk/kotlintraining/task03/contravariance/Contravariance.kt
+    * SEE ~/Documents/CODE/GITHUB/kotlin-skills/udemycourse/src/main/kotlin/co/bk/kotlinskills/udemycourse/contravariance/Contravariance.kt
 6.  Declaration-site variance:
     * means the use of IN and OUT keywords
     * you don't have "declaration site variance" in java (it only has use-site variance)
