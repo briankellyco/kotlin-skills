@@ -1,0 +1,47 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('d%21WfB7wYU9bkywh_ABC72Y5uzOqUTXElRAgQdRDNH6k99z2-KtTi-_S7NBbwGkFs-Z')/items('01OS3I7S6X624AFPB5AVHIJH2TBDKSABCD')/listItem/$entity",
+  "@odata.etag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,8\"",
+  "createdDateTime": "2023-02-27T07:23:15Z",
+  "eTag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,8\"",
+  "id": "246",
+  "lastModifiedDateTime": "2023-02-27T07:28:23Z",
+  "webUrl": "https://dbsw.sharepoint.com/teams/TeamNameHere/Shared%20Documents/%20Modeling%20Guide%20V1.0.pdf",
+  "createdBy":
+  {
+    "user":
+    {
+      "email": "",
+      "id": "",
+      "displayName": ""
+    }
+  },
+  "lastModifiedBy":
+  {
+    "user":
+    {
+      "email": "",
+      "id": "",
+      "displayName": ""
+    }
+  },
+  "parentReference":
+  {
+    "id": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+    "siteId": "dbsw.sharepoint.com,c15e3184-04b6-4b8a-81e7-54b5ec4b030a,c15e3184-04b6-4b8a-81e7-54b5ec4b030a"
+  },
+  "contentType":
+  {
+    "id": "0x010100FFD3E414576A44429240297EF7763DF4",
+    "name": "Document"
+  },
+  "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('d%21WfB7wYU9bkywh_JRO72Y5uzOqUTXElRAgQdRDNH6k99z2-KtTi-_S7NBbwGkFs-Z')/items('01OS3I7S6X624AFPB5AVHIJH2TBDKSABCD')/listItem/fields/$entity",
+  "fields": {
+    "@odata.etag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,14\"",
+    "Stichw_x00f6_rter": [
+    ],
+    "LinkFilename": "Änderungen_Architektur.pdf",
+    "Beschreibung": "Architektur-Prinzipien",
+    "Standard": "Standard txt",
+    "Modified": "2021-07-16T10:30:40Z"
+  }
+}

@@ -6,8 +6,14 @@ fun main(args: Array<String>) {
 
     exampleIterateEmptyList();
     exampleIteratePopulatedList();
+    exampleFilterInstances();
 
 }
+
+open class EducationalMaterial(val title: String)
+class Book(title: String, val author: String): EducationalMaterial(title)
+class Video(title: String, val duration: Int): EducationalMaterial(title)
+class Article(title: String, val publishedDate: String): EducationalMaterial(title)
 
 private fun exampleIterateEmptyList() {
 
@@ -29,6 +35,23 @@ private fun exampleIteratePopulatedList() {
     }
 
     println ("exampleIteratePopulatedList - pairList values are: ${commaSeparatedValues }")
+}
+
+private fun exampleFilterInstances() {
+
+    val materials = listOf(
+            Book("Kotlin Programming", "Buzz Aldrin"),
+            Video("Kotlin a visual guide", 25),
+            Article("Kotlin and Java a comparison", "2024-02-13"),
+            Video("Advanced Kotlin", 5),
+            Book("Java Programming", "Neil Armstrong")
+    )
+
+    val videoList = materials.filterIsInstance<Video>()
+
+    videoList.forEach { video ->
+            println("${video.title}, Duration: ${video.duration} minutes")
+    }
 }
 
 private fun convertLampsToPairs(lampList: List<Lamp>): List<Pair<Int, String>> {

@@ -1,0 +1,65 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('d%21WfB7wYU9bkywh_ABC72Y5uzOqUTXElRAgQdRDNH6k99z2-KtTi-_S7NBbwGkFs-Z')/items('01OS3I7S372IW2SSP2WBFLORGX5G3EABCD')/listItem/$entity",
+  "@odata.etag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,14\"",
+  "createdDateTime": "2021-06-01T06:49:34Z",
+  "eTag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,14\"",
+  "id": "202",
+  "lastModifiedDateTime": "2021-07-16T10:30:39Z",
+  "webUrl": "https://dbsw.sharepoint.com/teams/TeamNameHere/Shared%20Documents/General/%C3%84nderungen_Architektur.pdf",
+  "createdBy":
+  {
+    "user":
+    {
+      "email": "",
+      "id": "",
+      "displayName": ""
+    }
+  },
+  "lastModifiedBy":
+  {
+    "user":
+    {
+      "email": "",
+      "id": "",
+      "displayName": ""
+    }
+  },
+  "parentReference": {
+    "id": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+    "siteId": "dbsw.sharepoint.com,c15e3184-04b6-4b8a-81e7-54b5ec4b030a,c15e3184-04b6-4b8a-81e7-54b5ec4b030a"
+  },
+  "contentType": {
+    "id": "0x010100FFD3E414576A44429240297EF7763DF4",
+    "name": "Document"
+  },
+  "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('d%21WfB7wYU9abcf_JRO72Y5uzOqUTXElRAgQdRDNH6k99z2-KtTi-_S7NBbwGkFs-Z')/items('012S3I7S372IW2SSP2WBFLORGX5G3EABCD')/listItem/fields/$entity",
+  "fields": {
+    "@odata.etag": "\"c15e3184-04b6-4b8a-81e7-54b5ec4b030a,14\"",
+    "Stichw_x00f6_rter": [
+      {
+        "Label": "standard",
+        "TermGuid": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+        "WssId": 4
+      },
+      {
+        "Label": "architekturprinzipien",
+        "TermGuid": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+        "WssId": 7
+      },
+      {
+        "Label": "kommunikation",
+        "TermGuid": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+        "WssId": 10
+      },
+      {
+        "Label": "methoden",
+        "TermGuid": "c15e3184-04b6-4b8a-81e7-54b5ec4b030a",
+        "WssId": 6
+      }
+    ],
+    "LinkFilename": "Änderungen_Architektur.pdf",
+    "Beschreibung": "Architektur-Prinzipien",
+    "Standard": "Standard txt",
+    "Modified": "2021-07-16T10:30:40Z"
+  }
+}
