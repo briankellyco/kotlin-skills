@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     exampleIterateEmptyList();
     exampleIteratePopulatedList();
     exampleFilterInstances();
+    exampleUseJoinToStringTransform()
 
 }
 
@@ -54,9 +55,47 @@ private fun exampleFilterInstances() {
     }
 }
 
+private fun exampleUseJoinToStringTransform() {
+
+    val data = setOf("apiKey1->apiValue1","apiKey2->apiValue2",
+            "apiKey3->apiValue3","apiKey4->apiValue4")
+
+    // Call chain on collection type may be simplified
+    val optionOneUsingMap = data
+            .filter { it.contains("->") }
+            .map { it.substringBefore("->").trim() }
+            .joinToString(separator = ",")
+
+    // Transform... use lambda expression
+    val optionTwo = data
+            .filter { it.contains("->") }
+            .joinToString(separator = ",") { it.substringBefore("->").trim() }
+
+    // Transform... use function reference
+    val optionTwoFR = data
+            .filter { it.contains("->") }
+            .joinToString(separator = ",", transform = ::formatElement)
+
+    // Transform... use anonymous function
+    val optionTwoAF = data
+            .filter { it.contains("->") }
+            .joinToString(separator = ",", transform = fun(element: String): String {
+                return element.substringBefore("->").trim()
+            })
+
+    println("optionOneUsingMap $optionOneUsingMap")
+    println("optionTwo         $optionTwo")
+    println("optionTwoFR       $optionTwoFR")
+    println("optionTwoAF       $optionTwoAF")
+}
+
 private fun convertLampsToPairs(lampList: List<Lamp>): List<Pair<Int, String>> {
     // Simple syntax -> return lampList.map { lamp -> lamp.id to lamp.colour }
 
     // And values concatenated
     return lampList.map { lamp -> lamp.id to "${lamp.colour}-${lamp.model}-${lamp.power}" }
+}
+
+private fun formatElement(element: String): String {
+    return element.substringBefore("->").trim()
 }

@@ -9,9 +9,11 @@ plugins {
 dependencies {
     //api(project(":utilities"))
 
+    implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.4")
     implementation("com.microsoft.graph:microsoft-graph:5.77.0")
     implementation("org.apache.commons:commons-text:1.10.0")
+    implementation("org.apache.solr:solr-solrj:8.11.3")
 
 
 }
