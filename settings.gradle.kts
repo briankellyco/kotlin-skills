@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "kotlin-skills"
-include("app", "udemycourse", "utilities")
+include("app", "training", "udemycourse", "utilities")
